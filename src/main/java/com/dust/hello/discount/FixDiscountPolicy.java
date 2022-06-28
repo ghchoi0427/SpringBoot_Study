@@ -2,7 +2,9 @@ package com.dust.hello.discount;
 
 import com.dust.hello.member.Grade;
 import com.dust.hello.member.Member;
+import org.springframework.stereotype.Component;
 
+@Component
 public class FixDiscountPolicy implements DiscountPolicy {
 
     private int discountAmount = 1000;
