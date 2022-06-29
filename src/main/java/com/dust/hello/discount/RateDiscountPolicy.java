@@ -1,12 +1,12 @@
 package com.dust.hello.discount;
 
+import com.dust.hello.annotation.MainDiscountPolicy;
 import com.dust.hello.member.Grade;
 import com.dust.hello.member.Member;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Primary
+@MainDiscountPolicy
 public class RateDiscountPolicy implements DiscountPolicy {
 
     int discountRate = 10;
