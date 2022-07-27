@@ -1,2 +1,10 @@
-package com.dust.hello.http;public class Member {
+package com.dust.hello.http;
+
+
+import lombok.Data;
+
+@Data
+public class Member {
+    private Long id;
+    private String name;
 }
